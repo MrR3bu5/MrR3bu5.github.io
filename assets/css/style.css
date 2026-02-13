@@ -252,6 +252,58 @@ h1{font-size:3rem; line-height:1.1; margin:0 0 12px}
   letter-spacing:.04em;
 }
 
+/* ===== Writeups Active Workstream Styling ===== */
+
+.writing-active{
+  position:relative;
+  overflow:hidden;
+}
+
+/* subtle animated scanline effect */
+.writing-active::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(121,192,255,.06) 50%,
+    transparent 100%
+  );
+  animation:scanline 6s linear infinite;
+  pointer-events:none;
+}
+
+@keyframes scanline{
+  0%{ transform:translateX(-120%); }
+  100%{ transform:translateX(120%); }
+}
+
+/* status badge */
+.writing-status{
+  position:absolute;
+  top:14px;
+  right:14px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background:rgba(126,231,135,.12);
+  font-family:"JetBrains Mono", ui-monospace, monospace;
+  font-size:.75rem;
+  letter-spacing:.04em;
+}
+
+.status-dot{
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:var(--accent);
+  box-shadow:0 0 6px rgba(126,231,135,.6);
+}
+
 .about{
   display:grid; gap:14px; grid-template-columns: 1.2fr .8fr;
 }
