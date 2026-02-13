@@ -4,23 +4,21 @@
     "description": "A small proof-of-concept for log-based anomaly exploration and feature extraction.",
     "category": "ai",
     "tags": ["Python", "Notebook", "Feature Engineering"],
-    "repo": "https://github.com/MrR3bu5/Security-AI-Lab",
-    "writeup": "#"
-  },
-  {
-    "title": "Wazuh Detection Lab",
-    "description": "End-to-end ingestion and detection experiments with actionable alerts and validation notes.",
-    "category": "detection",
-    "tags": ["Wazuh", "SIEM", "Detection"],
-    "repo": "#",
-    "writeup": "#"
+    "repo": "https://github.com/MrR3bu5/security-ai-labs",
   },
   {
     "title": "Home Lab Security Stack",
     "description": "Documented lab architecture for networking, virtualization, and security telemetry collection.",
     "category": "lab",
     "tags": ["Proxmox", "Networking", "Logging"],
-    "repo": "#"
+    "repo": "https://github.com/MrR3bu5/security-homelab"
+  },
+  {
+    "title": "Security Lab Automation with Infrastructure as Code",
+    "description": "Terraform-driven provisioning of virtual machines and security tooling to rapidly build, reset, and scale a Purple Team lab environment while optimizing resource usage.",
+    "category": "automation",
+    "tags": ["Terraform", "IaC", "Automation", "Lab Engineering"]
+    "repo": "https://github.com/MrR3bu5/security-iac"
   }
 ]
 
