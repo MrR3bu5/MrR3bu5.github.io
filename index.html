@@ -1,1 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="MrR3bu5 (Mr Rebus) — Cybersecurity | Purple Team | Detection Engineering | Security Automation" />
+  <title>Errik Guzman (Mr.R3bus) | Cybersecurity Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">MR</div>
+        <div class="brand-text">
+          <div class="brand-name">MrR3bu5 <span class="muted">(Mr Rebus)</span></div>
+          <div class="brand-tagline">Cybersecurity • Purple Team • Detection Engineering • Automation</div>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#writing">Writeups</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn btn-small">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="pill">
+            <span class="dot" aria-hidden="true"></span>
+            Building security labs, detections, and automation that ship
+          </p>
+
+          <h1>
+            Practical security engineering,
+            <span class="gradient">documented</span>.
+          </h1>
+
+          <p class="lead">
+            I use <strong>MrR3bu5</strong> across CTFs and security communities (a nod to <em>rebus puzzles</em>).
+            Here you’ll find my lab work, detection engineering, and small security-AI proof-of-concepts.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+
+          <div class="quick-meta">
+            <div class="meta-item">
+              <div class="meta-k">Focus</div>
+              <div class="meta-v">Blue + Red Collaboration</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-k">Core</div>
+              <div class="meta-v">SIEM • EDR • IR • Scripting</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-k">Currently</div>
+              <div class="meta-v">Home Lab + Security-AI-Lab</div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Highlights">
+          <div class="card">
+            <h2>Highlights</h2>
+            <ul class="checklist">
+              <li>Detection-first lab projects (Wazuh, logs, telemetry)</li>
+              <li>Adversary emulation + validation loops</li>
+              <li>Readable writeups with artifacts & queries</li>
+              <li>Automation scripts (Python/Bash)</li>
+            </ul>
+
+            <div class="links">
+              <a class="link" href="https://github.com/MrR3bu5" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">Resume (PDF)</a>
+            </div>
+
+            <p class="small muted">Tip: replace LinkedIn/Resume links when ready.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p class="muted">A few things I’ve built and documented. More on GitHub.</p>
+        </div>
+
+        <div class="toolbar">
+          <label class="search">
+            <span class="muted">Search</span>
+            <input id="projectSearch" type="search" placeholder="e.g., Wazuh, Kerberoasting, SIEM..." autocomplete="off" />
+          </label>
+
+          <label class="select">
+            <span class="muted">Filter</span>
+            <select id="projectFilter">
+              <option value="all">All</option>
+              <option value="detection">Detection</option>
+              <option value="lab">Home Lab</option>
+              <option value="ai">Security AI</option>
+              <option value="tools">Tools</option>
+            </select>
+          </label>
+        </div>
+
+        <div id="projectGrid" class="grid" aria-live="polite"></div>
+
+        <div class="note">
+          <strong>Keep it tight:</strong> 3–6 “best” projects here, each with a clear outcome and artifacts.
+        </div>
+      </div>
+    </section>
+
+    <section id="writing" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Writeups</h2>
+          <p class="muted">Short, practical posts. (Start with 2–3 and iterate.)</p>
+        </div>
+
+        <div class="grid grid-2">
+          <article class="card">
+            <h3>Detecting Kerberoasting (Lab)</h3>
+            <p class="muted">
+              A walk-through: telemetry, query logic, false positives, and validation with emulation.
+            </p>
+            <div class="card-actions">
+              <a class="btn btn-small btn-ghost" href="#">Read</a>
+              <a class="btn btn-small" href="#">Repo</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Wazuh Pipeline: From Events → Alerts</h3>
+            <p class="muted">
+              How I structured ingestion, parsing, dashboards, and a “prove it” validation loop.
+            </p>
+            <div class="card-actions">
+              <a class="btn btn-small btn-ghost" href="#">Read</a>
+              <a class="btn btn-small" href="#">Repo</a>
+            </div>
+          </article>
+        </div>
+
+        <p class="small muted">Later: turn these into Markdown posts and auto-generate a list.</p>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>About</h2>
+        </div>
+
+        <div class="about">
+          <div class="card">
+            <h3>Who I am</h3>
+            <p>
+              I’m a cybersecurity professional focused on bridging offensive and defensive work: adversary emulation,
+              detection engineering, incident response, and automation.
+            </p>
+            <p class="muted">
+              Handle note: “MrR3bu5” is inspired by rebus puzzles — same identity across CTFs, labs, and security communities.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Skills snapshot</h3>
+            <ul class="tags" aria-label="Skills">
+              <li>Detection Engineering</li>
+              <li>SIEM / Log Pipelines</li>
+              <li>EDR Concepts</li>
+              <li>Threat Emulation</li>
+              <li>Python</li>
+              <li>Bash</li>
+              <li>Windows / AD</li>
+              <li>Linux</li>
+            </ul>
+            <p class="small muted">Keep this list honest and specific. Replace with your exact stack.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p class="muted">Fastest path: email + LinkedIn.</p>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>Email</h3>
+            <p class="muted">Add a professional email here.</p>
+            <a class="btn" href="mailto:your.email@example.com">your.email@example.com</a>
+            <p class="small muted">Tip: use a dedicated address for recruiting if you prefer.</p>
+          </div>
+
+          <div class="card">
+            <h3>Links</h3>
+            <div class="links">
+              <a class="link" href="https://github.com/MrR3bu5" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">TryHackMe</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">Hack The Box</a>
+            </div>
+            <p class="small muted">Only include platforms you’re comfortable showcasing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="muted small">© <span id="year"></span> MrR3bu5 • Built on GitHub Pages</div>
+      <div class="muted small">Last updated: <span id="updated"></span></div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
 
