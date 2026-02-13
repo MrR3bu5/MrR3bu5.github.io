@@ -233,6 +233,25 @@ h1{font-size:3rem; line-height:1.1; margin:0 0 12px}
   font-size:.95rem;
 }
 
+.writing-preview{
+  position:relative;
+  overflow:hidden;
+}
+
+.writing-badge{
+  position:absolute;
+  top:14px;
+  right:14px;
+  font-size:.75rem;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background:rgba(121,192,255,.15);
+  color:var(--text);
+  font-family:"JetBrains Mono", ui-monospace, monospace;
+  letter-spacing:.04em;
+}
+
 .about{
   display:grid; gap:14px; grid-template-columns: 1.2fr .8fr;
 }
