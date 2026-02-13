@@ -132,6 +132,47 @@ h1{font-size:3rem; line-height:1.1; margin:0 0 12px}
 .section-head h2{margin:0; font-size:1.7rem}
 .section-head p{margin:0}
 
+/* ===== Telemetry Indicator (Writeups Header) ===== */
+
+.telemetry-header{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.telemetry-indicator{
+  position:relative;
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background:var(--accent);
+  box-shadow:0 0 6px rgba(126,231,135,.6);
+}
+
+/* pulse ring */
+.telemetry-indicator::after{
+  content:"";
+  position:absolute;
+  inset:-6px;
+  border-radius:50%;
+  border:1px solid rgba(126,231,135,.35);
+  animation:telemetryPulse 2.5s ease-out infinite;
+}
+
+@keyframes telemetryPulse{
+  0%{
+    transform:scale(.6);
+    opacity:.8;
+  }
+  70%{
+    transform:scale(1.6);
+    opacity:0;
+  }
+  100%{
+    opacity:0;
+  }
+}
+
 .card{
   background:linear-gradient(180deg, rgba(15,22,32,.92), rgba(12,18,26,.92));
   border:1px solid var(--line);
