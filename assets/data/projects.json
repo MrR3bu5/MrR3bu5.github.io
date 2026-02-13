@@ -1,1 +1,26 @@
+[
+  {
+    "title": "Security-AI-Lab (PoC)",
+    "description": "A small proof-of-concept for log-based anomaly exploration and feature extraction.",
+    "category": "ai",
+    "tags": ["Python", "Notebook", "Feature Engineering"],
+    "repo": "https://github.com/MrR3bu5/Security-AI-Lab",
+    "writeup": "#"
+  },
+  {
+    "title": "Wazuh Detection Lab",
+    "description": "End-to-end ingestion and detection experiments with actionable alerts and validation notes.",
+    "category": "detection",
+    "tags": ["Wazuh", "SIEM", "Detection"],
+    "repo": "#",
+    "writeup": "#"
+  },
+  {
+    "title": "Home Lab Security Stack",
+    "description": "Documented lab architecture for networking, virtualization, and security telemetry collection.",
+    "category": "lab",
+    "tags": ["Proxmox", "Networking", "Logging"],
+    "repo": "#"
+  }
+]
 
