@@ -1,0 +1,20 @@
+[
+  {
+    "title": "HackTheBox Fortress: Jet",
+    "summary": "Enterprise-style fortress analysis covering attack paths, privilege escalation logic, and defensive visibility considerations.",
+    "tags": ["HackTheBox", "Fortress", "Purple Team"],
+    "link": "https://github.com/MrR3bu5/HTB-Writeups/blob/main/Fortresses/Jet/README.md"
+  },
+  {
+    "title": "HTB Machine (Linux): Cobblestone",
+    "summary": "Linux exploitation workflow with emphasis on enumeration decisions and detection opportunities.",
+    "tags": ["Linux", "Enumeration", "Privilege Escalation"],
+    "link": "https://github.com/MrR3bu5/HTB-Writeups/blob/main/Machines/Linux/Cobblestone.md"
+  },
+  {
+    "title": "HTB Machine (Windows): DarkZero",
+    "summary": "Windows-focused attack chain analysis exploring AD behaviors and defensive telemetry insights.",
+    "tags": ["Windows", "Active Directory", "Detection"],
+    "link": "https://github.com/MrR3bu5/HTB-Writeups/blob/main/Machines/Windows/DarkZero.md"
+  }
+]
