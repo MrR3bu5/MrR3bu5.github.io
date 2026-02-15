@@ -124,7 +124,10 @@ h1{font-size:3rem; line-height:1.1; margin:0 0 12px}
 .lead{font-size:1.1rem; color:rgba(230,237,243,.92); max-width:62ch}
 .cta-row{display:flex; gap:12px; margin:18px 0 22px; flex-wrap:wrap}
 
-.hero-card .card{height:100%}
+.hero-card .card{
+  height:100%;
+  min-height:320px
+}
 
 .quick-meta{
   display:grid; gap:10px;
