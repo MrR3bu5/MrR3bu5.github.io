@@ -81,6 +81,51 @@ async function loadProjects() {
   render();
 }
 
+const writeupGrid = document.getElementById("writeupGrid");
+let WRITEUPS = [];
+
+function writeupCard(w) {
+  const tags = (w.tags || []).map(t => `<span class="badge">${t}</span>`).join("");
+  return `
+    <article class="card">
+      <h4 class="project-title">${w.title}</h4>
+      <p class="muted small">${w.summary}</p>
+      <div class="badges">${tags}</div>
+      <div class="card-actions">
+        <a class="btn btn-small" href="${w.link}" target="_blank" rel="noreferrer noopener">Read</a>
+      </div>
+    </article>
+  `;
+}
+
+async function loadWriteups() {
+  if (!writeupGrid) return;
+
+  try {
+    const res = await fetch("assets/data/writeups.json", { cache: "no-store" });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    WRITEUPS = await res.json();
+  } catch (e) {
+    WRITEUPS = [];
+    console.warn("Could not load writeups.json", e);
+  }
+
+  if (WRITEUPS.length === 0) {
+    writeupGrid.innerHTML = `
+      <div class="card">
+        <h4 class="project-title">Writeups loading</h4>
+        <p class="muted small">If this persists, verify assets/data/writeups.json exists and is valid JSON.</p>
+      </div>
+    `;
+    return;
+  }
+
+  writeupGrid.innerHTML = WRITEUPS.map(writeupCard).join("");
+}
+
+loadWriteups();
+
+
 searchInput.addEventListener("input", render);
 filterSelect.addEventListener("change", render);
 
