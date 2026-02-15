@@ -90,6 +90,18 @@ a{color:inherit}
 .hero-grid{display:grid; gap:20px; grid-template-columns: 1.4fr .9fr}
 @media (max-width: 900px){ .hero-grid{grid-template-columns:1fr} }
 
+.hero-divider{
+  height:1px;
+  margin-top:32px;
+  background:linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,.12),
+    transparent
+  );
+}
+
+
 .pill{
   display:inline-flex; align-items:center; gap:10px;
   border:1px solid var(--line);
