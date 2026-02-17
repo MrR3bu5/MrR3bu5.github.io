@@ -16,5 +16,29 @@
     "summary": "Windows-focused attack chain analysis exploring AD behaviors and defensive telemetry insights.",
     "tags": ["Windows", "Active Directory", "Detection"],
     "link": "https://github.com/MrR3bu5/HTB-Writeups/blob/main/Machines/Windows/DarkZero.md"
+  },
+  {
+    "title": "HTB Machine (Linux): Code",
+    "summary": "Python sandbox escape leading to credential recovery, SSH pivoting, and privilege escalation through sudo misconfiguration.",
+    "tags": ["Linux", "Web Exploitation", "Privilege Escalation"],
+    "link": "https://github.com/MrR3bu5/HTB-Writeups/blob/main/Machines/Linux/Code.md"
+  },
+  {
+    "title": "HTB Machine (Windows): Devel",
+    "summary": "IIS and FTP misconfiguration allowing web shell deployment followed by kernel-level privilege escalation.",
+    "tags": ["Windows", "IIS", "Privilege Escalation"],
+    "link": "https://github.com/MrR3bu5/HTB-Writeups/blob/main/Machines/Windows/Devel.md"
+  },
+  {
+    "title": "HTB Machine (Linux): Editor",
+    "summary": "XWiki exploitation chain leveraging known vulnerabilities to achieve remote code execution and system compromise.",
+    "tags": ["Linux", "Web Exploitation", "RCE"],
+    "link": "https://github.com/MrR3bu5/HTB-Writeups/blob/main/Machines/Linux/Editor.md"
+  },
+  {
+    "title": "HTB Machine (Linux): Expressway",
+    "summary": "VPN protocol analysis exploiting aggressive mode information disclosure to recover credentials and gain access.",
+    "tags": ["Linux", "Networking", "Credential Access"],
+    "link": "https://github.com/MrR3bu5/HTB-Writeups/blob/main/Machines/Linux/Expressway.md"
   }
 ]
